@@ -27,7 +27,8 @@ CONFIG_SCHEMA = cv.Schema({
 
 async def to_code(config):
     cg.add_library(
-        name="esp-nimble-component",
+        name="esp-nimble-cpp",
+        version="1.4.1",
     )
     var = cg.new_Pvariable(config[CONF_ID])
     await cg.register_component(var, config)
